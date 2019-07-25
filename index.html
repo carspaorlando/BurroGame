@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	<script src="libs/three.js"></script>
+	<script src="libs/keyboard.js"></script>
+	<script src="fonts/helvetiker_regular.typeface.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<script src="js/playingCardsDemo.js"></script>
+	<script src="js/CardStuff.js"></script>
+	
+	<button type="button" id="selectCardBackButton" onclick="showCardBackSelector();">Select Card Back</button><button type="button" id="SelectCardThemeButton"  onclick="showCardThemeSelector();">Select Card Theme</button>
+
+	<div id="selectCardBackDialog">
+		<div class="selectorDiv" id="sel1"><img class="thumb" id="csel1" onclick="selectWhich(0);" src="Cards/Excalibur.png" /></div>
+		<div class="selectorDiv" id="sel2"><img class="thumb" id="csel2" onclick="selectWhich(1);" src="Cards/Cars.png" /></div>
+		<div class="selectorDiv" id="sel3"><img class="thumb" id="csel3" onclick="selectWhich(2);" src="Cards/Sailboat.png" /></div>
+		<div class="selectorDiv" id="sel4"><img class="thumb" id="csel4" onclick="selectWhich(3);" src="Cards/Plaid.png" /></div><br />
+		<div class="selectorDiv" id="sel5"><img class="thumb" id="csel5" onclick="selectWhich(4);" src="Cards/Star.png" /></div>
+		<div class="selectorDiv" id="sel6"><img class="thumb" id="csel6" onclick="selectWhich(5);" src="Cards/Underwater.png" /></div>
+		<div class="selectorDiv" id="sel7"><img class="thumb" id="csel7" onclick="selectWhich(6);" src="Cards/Tiger.png" /></div>
+		<div class="selectorDiv" id="sel8"><img class="thumb" id="csel8" onclick="selectWhich(7);" src="Cards/Vines.png" /></div><br />
+		<div class="dialogButtonDiv">
+			<button type="button" id="okButton" onclick="dlgOK();">OK</button>
+			<button type="button" id="cancelButton" onclick="dlgCancel();">Cancel</button>
+		</div>
+	</div>
+<button id="gameInstructions-button" onclick="var dialog = document.getElementById('gameInstructions-dialog'); dialog.style.display = 'block';">Help</button>
+			<div id="gameInstructions-dialog" class="dialog">
+				<h3>About the Game</h3>
+				<p> Place one card in the middle and wait until your oponent does the same  thing<p>
+				<p> Each time a card is placed in the middle compare it with the target value<p>
+				<p> if the card matches this value grab as many cards as you can before your oponent does<p>
+				<p> Whoever is out of cards looses the game.<p>
+				<h3>General Controls</h3>
+				<p><b>D:</b> to deal the game.</p>
+				<p><b>R:</b> to Reset the game.</p>
+				<h3>Player 1 Controls</h3>
+				<p><b>W:</b> Player 1 plays a card in center</p>
+				<p><b>S:</b> hold to grab as many cards as possible.</p>
+				<h3>Player 2 Controls</h3>
+				<p><b>O:</b> Player 2 place a card in center</p>
+				<p><b>L:</b> hold to grab as many cards as possible.</p>
+				
+				
+
+
+            
+
+            <button onclick="var dialog = document.getElementById('gameInstructions-dialog'); dialog.style.display = 'none';">Continue</button>
+        </div>
+	<script src="js/ui.js"></script>
+	
+	
+	
+</body>
+
+</html>
